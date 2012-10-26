@@ -130,7 +130,7 @@ namespace SwCSharpAddin1
             double scnx = mn2 * Math.Cos(an2 * Math.PI / 180.0) * Math.Cos(an2 * Math.PI / 180.0) * (Math.PI / 2.0 + 2 * xnx * Math.Tan(an2 * Math.PI / 180.0));
             double hcnx = hax - 0.182 * scnx;
             returnResult[25] = scnx;                                                           //求小齿轮固定弦齿厚
-            returnResult[26] = hcnx;                                                            //求小齿轮固定弦齿高 dfd  
+            returnResult[26] = hcnx;                                                            //求小齿轮固定弦齿高 dfd  ffff
 
 
             double aatd = Math.Acos(dbd / dad);
