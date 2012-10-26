@@ -7,19 +7,19 @@ using System.Drawing.Drawing2D;
 using System.Data;
 using System.Threading;
 using ZedGraph;
-
+//test
 
 namespace SwCSharpAddin1
 {
 	/// <summary>
-	/// DrawPicture µÄÕªÒªËµÃ÷¡£
+	/// DrawPicture ï¿½ï¿½ÕªÒªËµï¿½ï¿½ï¿½ï¿½
 	/// </summary>
 	public class MyPlot
 	{
 		public MyPlot()
 		{
 		}
-        #region »æÖÆÍ¼ÐÎ
+        #region ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½
 
 
         /// <summary>
@@ -96,7 +96,7 @@ namespace SwCSharpAddin1
             myGraphControl.RestoreScale(myPane);
             myGraphControl.Invalidate();
             Application.DoEvents();
-            Thread.Sleep(10);//ÔÝÍ£0.05Ãë
+            Thread.Sleep(10);//ï¿½ï¿½Í£0.05ï¿½ï¿½
         }
 
      /// <summary>
@@ -122,7 +122,7 @@ namespace SwCSharpAddin1
             {
                 double x = coor_x[i];
                 double y = coor_y[i];
-                list.Add(x, y);//»æÖÆÇúÏß
+                list.Add(x, y);//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             }
             LineItem myCurve = myPane.AddCurve(title,list, Color.Black, SymbolType.None);
             myCurve.Symbol.Fill = new Fill(Color.White);
@@ -174,7 +174,7 @@ namespace SwCSharpAddin1
         {
             PointPair pt = curve[iPt];
 
-            return curve.Label.Text + "   ºá×ø±êÎª£º" + pt.X.ToString("f4") + " ×Ý×ø±êÎª£º " + pt.Y.ToString("f4") + " (mm)";
+            return curve.Label.Text + "   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½" + pt.X.ToString("f4") + " ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ " + pt.Y.ToString("f4") + " (mm)";
 
 
         }
@@ -184,6 +184,6 @@ namespace SwCSharpAddin1
         }
 
             
-        #endregion »æÖÆÍ¼ÐÎ
+        #endregion ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½
 	}
 }
